@@ -1,4 +1,6 @@
 package day5;
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 /*** Teacher's note ***/
@@ -17,30 +19,41 @@ public class FlamingNinjaStar {
 		// *15. Make some adjustments to see what other kinds of shapes you can make.
 
 		// 1. Make a new robot, and set it's pen down.
+		Robot BB13=new Robot ();
+		BB13.penDown();
 
 		// 12. Set the robot speed to 10
 
 		// 13. Make all the code below repeat 25 times
 
 			// 2. Turn the robot 1/8 of a circle
+		BB13.turn(360/8);    
 		
 			// 3. Move the robot 64 pixels
-
+		BB13.move(64);
+		BB13.setPenColor(Color.ORANGE);
 			
 			// 4. Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
+		BB13.turn(-40);
 			
 			// 5. Move the robot the distance in the variable flameSize
+		BB13.move(flameSize);
 			
 			// 6. Turn the robot 170 degrees
+		BB13.turn(170);
 			
 			// 7. Move the robot the distance in the variable flameSize (again)
+		BB13.move(flameSize);
 			
 			// 8. Turn the robot 64 degrees to the right
+		BB13.turn(64);
 			
 			// 9. Move the robot the distance in the variable baseSize
+		BB13.move(baseSize);
 			
 			// 10. Check that your shape is the same as Figure 1. This is one arm of the ninja star.
 			// 11. Color your ninja star like Figure 2.
+		
 		
 	}
 
